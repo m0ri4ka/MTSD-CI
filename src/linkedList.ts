@@ -32,7 +32,7 @@ export class LinkedList {
     }
 
     insert(element: string, index: number) {
-        if (index > 0 || index > this.size) {
+        if (index < 0 || index > this.size) {
             throw new Error('Index out of bounds');
         }
 
